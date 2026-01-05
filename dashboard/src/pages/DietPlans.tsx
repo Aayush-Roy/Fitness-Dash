@@ -108,17 +108,6 @@ const DietPlans = () => {
     return watchMeals.reduce((sum, meal) => sum + calculateTotalCalories(watchMeals.indexOf(meal)), 0);
   };
 
-  // const onSubmit = async (data: DietPlanFormData) => {
-  //   try {
-  //     await axiosInstance.post('/diet/plans', data);
-  //     toast.success('Diet plan created successfully');
-  //     fetchDietPlans();
-  //     setShowCreateForm(false);
-  //     reset();
-  //   } catch (error) {
-  //     toast.error('Failed to create diet plan');
-  //   }
-  // };
 
   const onSubmit = async (data: DietPlanFormData) => {
     console.log("data", data)
@@ -422,7 +411,7 @@ const DietPlans = () => {
                   </span>
                   <div className="flex items-center text-sm text-gray-400">
                     <Flame size={14} className="mr-1" />
-                    {plan.calories} kcal/day
+                    {plan.dailyCalories} kcal/day
                   </div>
                 </div>
               </div>

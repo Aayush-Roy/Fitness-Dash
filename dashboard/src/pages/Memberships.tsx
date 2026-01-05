@@ -608,7 +608,7 @@ const Memberships = () => {
                           <button
                             onClick={() => {
                               // Edit functionality
-                              toast.info('Edit feature coming soon');
+                              toast('Edit feature coming soon');
                             }}
                             className="p-2 hover:bg-dark-700 rounded-lg transition-colors"
                             title="Edit"
