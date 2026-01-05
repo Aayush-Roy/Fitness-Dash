@@ -146,25 +146,25 @@ const DietPlans = () => {
 };
 
 
-  const addFoodToMeal = (mealIndex: number) => {
-    const meals = [...watchMeals];
-    meals[mealIndex].foods.push({
-      name: '',
-      calories: 0,
-      protein: 0,
-      carbs: 0,
-      fats: 0,
-    });
-    // Update form
-  };
+  // const addFoodToMeal = (mealIndex: number) => {
+  //   const meals = [...watchMeals];
+  //   meals[mealIndex].foods.push({
+  //     name: '',
+  //     calories: 0,
+  //     protein: 0,
+  //     carbs: 0,
+  //     fats: 0,
+  //   });
+  //   // Update form
+  // };
 
-  const removeFoodFromMeal = (mealIndex: number, foodIndex: number) => {
-    const meals = [...watchMeals];
-    if (meals[mealIndex].foods.length > 1) {
-      meals[mealIndex].foods.splice(foodIndex, 1);
-      // Update form
-    }
-  };
+  // const removeFoodFromMeal = (mealIndex: number, foodIndex: number) => {
+  //   const meals = [...watchMeals];
+  //   if (meals[mealIndex].foods.length > 1) {
+  //     meals[mealIndex].foods.splice(foodIndex, 1);
+  //     // Update form
+  //   }
+  // };
 
   if (loading) {
     return (

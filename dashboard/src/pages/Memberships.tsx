@@ -281,21 +281,21 @@ const Memberships = () => {
     return end.toISOString().split('T')[0];
   };
 
-  const handleStartDateChange = (e: React.ChangeEvent<HTMLInputElement>, planType: 'monthly' | 'yearly') => {
-    const newStartDate = e.target.value;
-    const newEndDate = calculateEndDate(newStartDate, planType);
+  // const handleStartDateChange = (e: React.ChangeEvent<HTMLInputElement>, planType: 'monthly' | 'yearly') => {
+  //   const newStartDate = e.target.value;
+  //   const newEndDate = calculateEndDate(newStartDate, planType);
     
-    // Update form values
-    const event = {
-      target: {
-        name: 'endDate',
-        value: newEndDate
-      }
-    } as React.ChangeEvent<HTMLInputElement>;
+  //   // Update form values
+  //   const event = {
+  //     target: {
+  //       name: 'endDate',
+  //       value: newEndDate
+  //     }
+  //   } as React.ChangeEvent<HTMLInputElement>;
     
-    // You would need to set the form value here
-    // For now, we'll handle it in the form submission
-  };
+  //   // You would need to set the form value here
+  //   // For now, we'll handle it in the form submission
+  // };
 
   if (loading) {
     return (
