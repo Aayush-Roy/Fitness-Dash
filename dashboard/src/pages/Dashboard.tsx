@@ -62,7 +62,7 @@ const Dashboard = () => {
         axiosInstance.get('/diet/plans'),
         axiosInstance.get('/payment/history'),
       ]);
-      console.log("users",usersRes.data.data.users.length[0]);
+      console.log("users",usersRes.data.data.users.length);
       // console.log("workout",workoutRes.data.data.workoutPlans);
       // console.log("deits",dietRes.data.data.dietPlans);
       // console.log("payment",paymentsRes.data.data)
