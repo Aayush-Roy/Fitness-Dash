@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Calendar, User, CreditCard, Plus, Search, Filter, Edit, Trash2, CheckCircle, XCircle } from 'lucide-react';
+import { Calendar, User, CreditCard, Plus, Search, Filter, Edit, Trash2, CheckCircle } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
