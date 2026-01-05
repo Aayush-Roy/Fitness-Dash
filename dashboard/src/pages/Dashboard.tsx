@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Users, DollarSign, Dumbbell, Apple, TrendingUp } from 'lucide-react';
+import { Users, DollarSign, Dumbbell, TrendingUp } from 'lucide-react';
 import {
   LineChart,
   Line,
